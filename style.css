@@ -150,6 +150,43 @@ abbr {
 }
 
 
+/*============Language / HTML ===========*/
+.sectionQuest {
+    border: 1px solid #c1adad;
+    display: grid;
+    /* flex-direction: column; */
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    position: fixed;
+}
+.questContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50rem;
+}
+.quest {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.ans {
+    background-color: rgb(174, 177, 178);
+    border-radius: 5px; 
+    color: #000;
+    padding: 5px;
+}
+#showBtn {
+    background-color: rgb(0, 87, 128);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+
 /*==========Contact==========*/
 .section3 {
     display: flex;
