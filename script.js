@@ -40,3 +40,25 @@ function myQuest4() {
       x.style.display = "none";
     }
   }
+
+
+   /********Quest5*********/
+function myQuest5() {
+    let x = document.getElementById("ansFive");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+
+   /********Quest6*********/
+   function myQuest6() {
+    let x = document.getElementById("ansSix");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
