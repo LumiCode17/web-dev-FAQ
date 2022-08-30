@@ -1,34 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developers Frequently Asked Questions</title>
-    <!--CSS-->
-    <link rel="stylesheet" href="/style.css" />
-    <!--Tailwind css-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-     <!--ionic.io-->
-     <script
-     type="module"
-     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-   ></script>
-   <script
-     nomodule
-     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-   ></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developers Frequently Asked Questions</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="/style.css" />
+  <!--Tailwind css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--ionic.io-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
+
 <body>
   <header>
     <h1>Developers Frequently Asked Questions</h1>
@@ -37,7 +26,7 @@
         <a href="/index.html">Home</a>
 
         <a href="/about.html">About</a>
-        
+
         <div class="subnav">
           <button class="subnavbtn">Language <i class="fa fa-caret-down"></i></button>
           <div class="subnav-content">
@@ -46,7 +35,7 @@
             <a href="#package">JAVASCRIPT</a>
             <a href="#express">Express</a>
           </div>
-        </div> 
+        </div>
 
         <div class="subnav">
           <button class="subnavbtn">Frameworks <i class="fa fa-caret-down"></i></button>
@@ -67,21 +56,31 @@
 
     <div class="questContainer">
       <div class="quest">What is HTML?</div>
-      <div id="ans" class="ans" style="display: none;">HTML stands for Hyper Text Markup Language. It is a language of the World Wide Web. It is a standard text formatting language which is used to create and display pages on the Web. HTML makes the text more interactive and dynamic. It can turn text into images, tables, links. HTML pages are saved by adding .html or .html in web page name.</div>
+      <div id="ans" class="ans" style="display: none;">HTML stands for Hyper Text Markup Language. It is a language of
+        the World Wide Web. It is a standard text formatting language which is used to create and display pages on the
+        Web. HTML makes the text more interactive and dynamic. It can turn text into images, tables, links. HTML pages
+        are saved by adding .html or .html in web page name.</div>
       <button id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
       <div class="quest">What is the difference between HTML elements and tags?</div>
-      <div id="ansTwo" class="ans" style="display: none;">The <b>Elements</b> is an individual component of the HTML web page or document. It represents semantics or meaning. For example, the title element represents the title of the document.
-      <br><b>Tags</b> is the root of the HTML document which is used to specify that the document is HTML. For example, the Head tag is used to contain all the head element in the HTML file</div>
+      <div id="ansTwo" class="ans" style="display: none;">The <b>Elements</b> is an individual component of the HTML web
+        page or document. It represents semantics or meaning. For example, the title element represents the title of the
+        document.
+        <br><b>Tags</b> is the root of the HTML document which is used to specify that the document is HTML. For
+        example, the Head tag is used to contain all the head element in the HTML file
+      </div>
       <button onclick="myFunction()" id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
       <div class="quest">What are Attributes and how do you use them?</div>
-      <div id="ansThree" class="ans" style="display: none;">Each tag has additional attributes that change the way the tag behaves or is displayed. For example, a <b>Input</b> tag has a type attribute, which you can use to specify whether it’s a text field, checkbox, radio button or one of many more options.
-        Attributes are specified directly after the name of the tag, inside the two angled brackets. They should only ever appear in opening tags or in self-closing tags. But, they can never be in closing tags.<br>Example...<br>
+      <div id="ansThree" class="ans" style="display: none;">Each tag has additional attributes that change the way the
+        tag behaves or is displayed. For example, a <b>Input</b> tag has a type attribute, which you can use to specify
+        whether it’s a text field, checkbox, radio button or one of many more options.
+        Attributes are specified directly after the name of the tag, inside the two angled brackets. They should only
+        ever appear in opening tags or in self-closing tags. But, they can never be in closing tags.<br>Example...<br>
         input type="text"
         input type="checkbox"
         input type="radio" value="on"</div>
@@ -90,33 +89,180 @@
 
     <div class="questContainer">
       <div class="quest">What is the difference between a block-level element and an inline element?</div>
-      <div id="ansFour" class="ans" style="display: none;">A block-level element is drawn as a block that stretches to fill the full width available to it i.e, the width of its container and will always start on a new line.
+      <div id="ansFour" class="ans" style="display: none;">A block-level element is drawn as a block that stretches to
+        fill the full width available to it i.e, the width of its container and will always start on a new line.
         Elements that are block-level by default: <b>img</b>, <b>section</b>, <b>form</b>, <b>nav</b> <br>
-        Inline elements are drawn where they are defined and only take up space that is absolutely needed. The easiest way to understand how they work is to look at how text flows on a page.
+        Inline elements are drawn where they are defined and only take up space that is absolutely needed. The easiest
+        way to understand how they work is to look at how text flows on a page.
         Examples of elements that are inline by default: <b>span</b>, <b>strong</b>, <b>a</b>, <b>input</b>, </div>
       <button onclick="myQuest4()" id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
       <div class="quest">How to comment in HTML?</div>
-      <div id="ansFive" class="ans" style="display: none;">The start of the comment is denoted by <b><</b><b>!</b><b>-- commented --</b><b>></b>. Anything in the middle will be completely ignored, even if it contains valid HTML. </div>
+      <div id="ansFive" class="ans" style="display: none;">The start of the comment is denoted by <b>
+          << /b><b>!</b><b>-- commented --</b><b>></b>. Anything in the middle will be completely ignored, even if it
+            contains valid HTML. </div>
       <button onclick="myQuest5()" id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
       <div class="quest">What are the HTML tags used to display the data in the tabular form?
       </div>
-      <div id="ansSix" class="ans" style="display: none;">The list of HTML tags used to display data in the tabular form include:<br> <b>table, </b><b>tr, </b><b>th, </b><b>td, </b><b>caption, </b><b>colgroup, </b><b>col, </b><b>body, </b><b>thead, </b><b>tfooter </b> </div>
+      <div id="ansSix" class="ans" style="display: none;">The list of HTML tags used to display data in the tabular form
+        include:<br> <b>table, </b><b>tr, </b><b>th, </b><b>td, </b><b>caption, </b><b>colgroup, </b><b>col,
+        </b><b>body, </b><b>thead, </b><b>tfooter </b> </div>
 
       <button onclick="myQuest6()" id="showBtn">Show Answer</button>
     </div>
 
-    
+    <div class="questContainer">
+      <div class="quest">What are the HTML tags used to display the data in the tabular form?
+      </div>
+      <div id="ansSeven" class="ans" style="display: none;">The list of HTML tags used to display data in the tabular
+        form include:<br> <b>table, </b><b>tr, </b><b>th, </b><b>td, </b><b>caption, </b><b>colgroup, </b><b>col,
+        </b><b>body, </b><b>thead, </b><b>tfooter </b> </div>
+
+      <button onclick="myQuest7()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What are the HTML tags used to display the data in the tabular form?
+      </div>
+      <div id="ansEight" class="ans" style="display: none;">The list of HTML tags used to display data in the tabular
+        form include:<br> <b>table, </b><b>tr, </b><b>th, </b><b>td, </b><b>caption, </b><b>colgroup, </b><b>col,
+        </b><b>body, </b><b>thead, </b><b>tfooter </b> </div>
+
+      <button onclick="myQuest8()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What are the HTML tags used to display the data in the tabular form?
+      </div>
+      <div id="ansNine" class="ans" style="display: none;">The list of HTML tags used to display data in the tabular
+        form include:<br> <b>table, </b><b>tr, </b><b>th, </b><b>td, </b><b>caption, </b><b>colgroup, </b><b>col,
+        </b><b>body, </b><b>thead, </b><b>tfooter </b> </div>
+
+      <button onclick="myQuest9()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What are the HTML tags used to display the data in the tabular form?
+      </div>
+      <div id="ansTen" class="ans" style="display: none;">The list of HTML tags used to display data in the tabular form
+        include:<br> <b>table, </b><b>tr, </b><b>th, </b><b>td, </b><b>caption, </b><b>colgroup, </b><b>col,
+        </b><b>body, </b><b>thead, </b><b>tfooter </b> </div>
+
+      <button onclick="myQuest10()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What are the HTML tags used to display the data in the tabular form?
+      </div>
+      <div id="ansEleven" class="ans" style="display: none;">The list of HTML tags used to display data in the tabular
+        form include:<br> <b>table, </b><b>tr, </b><b>th, </b><b>td, </b><b>caption, </b><b>colgroup, </b><b>col,
+        </b><b>body, </b><b>thead, </b><b>tfooter </b> </div>
+
+      <button onclick="myQuest11()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What are the HTML tags used to display the data in the tabular form?
+      </div>
+      <div id="ansTwelve" class="ans" style="display: none;">The list of HTML tags used to display data in the tabular
+        form include:<br> <b>table, </b><b>tr, </b><b>th, </b><b>td, </b><b>caption, </b><b>colgroup, </b><b>col,
+        </b><b>body, </b><b>thead, </b><b>tfooter </b> </div>
+
+      <button onclick="myQuest12()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What are the HTML tags used to display the data in the tabular form?
+      </div>
+      <div id="ansThirteen" class="ans" style="display: none;">The list of HTML tags used to display data in the tabular
+        form include:<br> <b>table, </b><b>tr, </b><b>th, </b><b>td, </b><b>caption, </b><b>colgroup, </b><b>col,
+        </b><b>body, </b><b>thead, </b><b>tfooter </b> </div>
+
+      <button onclick="myQuest13()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What are the HTML tags used to display the data in the tabular form?
+      </div>
+      <div id="ansFourteen" class="ans" style="display: none;">The list of HTML tags used to display data in the tabular
+        form include:<br> <b>table, </b><b>tr, </b><b>th, </b><b>td, </b><b>caption, </b><b>colgroup, </b><b>col,
+        </b><b>body, </b><b>thead, </b><b>tfooter </b> </div>
+
+      <button onclick="myQuest14()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What are the HTML tags used to display the data in the tabular form?
+      </div>
+      <div id="ansFifteen" class="ans" style="display: none;">The list of HTML tags used to display data in the tabular
+        form include:<br> <b>table, </b><b>tr, </b><b>th, </b><b>td, </b><b>caption, </b><b>colgroup, </b><b>col,
+        </b><b>body, </b><b>thead, </b><b>tfooter </b> </div>
+
+      <button onclick="myQuest15()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What are the HTML tags used to display the data in the tabular form?
+      </div>
+      <div id="ansSixteen" class="ans" style="display: none;">The list of HTML tags used to display data in the tabular
+        form include:<br> <b>table, </b><b>tr, </b><b>th, </b><b>td, </b><b>caption, </b><b>colgroup, </b><b>col,
+        </b><b>body, </b><b>thead, </b><b>tfooter </b> </div>
+
+      <button onclick="myQuest16()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What are the HTML tags used to display the data in the tabular form?
+      </div>
+      <div id="ansSeventeen" class="ans" style="display: none;">The list of HTML tags used to display data in the
+        tabular form include:<br> <b>table, </b><b>tr, </b><b>th, </b><b>td, </b><b>caption, </b><b>colgroup,
+        </b><b>col, </b><b>body, </b><b>thead, </b><b>tfooter </b> </div>
+
+      <button onclick="myQuest17()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What are the HTML tags used to display the data in the tabular form?
+      </div>
+      <div id="ansEighteen" class="ans" style="display: none;">The list of HTML tags used to display data in the tabular
+        form include:<br> <b>table, </b><b>tr, </b><b>th, </b><b>td, </b><b>caption, </b><b>colgroup, </b><b>col,
+        </b><b>body, </b><b>thead, </b><b>tfooter </b> </div>
+
+      <button onclick="myQuest18()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What are the HTML tags used to display the data in the tabular form?
+      </div>
+      <div id="ansNineteen" class="ans" style="display: none;">The list of HTML tags used to display data in the tabular
+        form include:<br> <b>table, </b><b>tr, </b><b>th, </b><b>td, </b><b>caption, </b><b>colgroup, </b><b>col,
+        </b><b>body, </b><b>thead, </b><b>tfooter </b> </div>
+
+      <button onclick="myQuest19()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What ?
+      </div>
+      <div id="ansTwenty" class="ans" style="display: none;">The list of HTML tags used to display data in the tabular
+        form include:<br> <b>table, </b><b>tr, </b><b>th, </b><b>td, </b><b>caption, </b><b>colgroup, </b><b>col,
+        </b><b>body, </b><b>thead, </b><b>tfooter </b> </div>
+
+      <button onclick="myQuest20()" id="showBtn">Show Answer</button>
+    </div>
+
+
   </section>
 
 
- 
+
   <script src="/script.js"></script>
-    
+
 </body>
+
 </html>
