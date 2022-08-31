@@ -32,23 +32,23 @@
                     <div class="subnav-content">
                         <a href="../languages/html.html">HTML</a>
                         <a href="../languages/css.html"">CSS</a>
-                        <a href="../languages/script.html"">JAVASCRIPT</a>
+                        <a href=" ../languages/script.html"">JAVASCRIPT</a>
                         <a href="../languages/xpress.html"">Express</a>
                     </div>
                 </div>
 
-                <div class="subnav">
-                    <button class="subnavbtn">Frameworks <i class="fa fa-caret-down"></i></button>
-                    <div class="subnav-content">
-                        <a href="#link1">Angular</a>
-                        <a href="#link2">Bootstrap</a>
-                        <a href="#link3">ReactJS</a>
-                        <a href="#link4">Tailwind</a>
+                <div class=" subnav">
+                            <button class="subnavbtn">Frameworks <i class="fa fa-caret-down"></i></button>
+                            <div class="subnav-content">
+                                <a href="#link1">Angular</a>
+                                <a href="#link2">Bootstrap</a>
+                                <a href="#link3">ReactJS</a>
+                                <a href="#link4">Tailwind</a>
+                            </div>
                     </div>
-                </div>
 
-                <a href="contact.html">Contact</a>
-            </div>
+                    <a href="contact.html">Contact</a>
+                </div>
         </nav>
     </header>
 
@@ -73,32 +73,35 @@
         </div>
 
 
-        <form action="/action_page.php">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <div class="form">
+            <label for="fullName">First Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Your full name..">
 
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-            <label for="country">Country</label>
-            <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-            </select>
+            <label for="email">Email</label>
+            <input type="email" id="email_id" name="email" placeholder="Your email..">
 
             <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <textarea id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-            <input type="submit" value="Submit">
-        </form>
+            <input onclick="SendMail()" type="submit" value="Submit" id="inputSend">
+        </div>
 
 
         <div></div>
     </div>
 
     <footer>ggggggg</footer>
+    
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("AaxS3T8QNhAUuPLEx");
+        })();
+    </script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
