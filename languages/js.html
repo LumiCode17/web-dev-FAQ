@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developers Frequently Asked Questions</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="../style.css" />
+  <!--Tailwind css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--ionic.io-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  < nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Developers Frequently Asked Questions</h1>
+    <nav>
+      <div class="navbar">
+        <a href="../index.html">Home</a>
+
+        <a href="../about.html">About</a>
+
+        <div class="subnav">
+          <button class="subnavbtn">Language <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="./html.html">HTML</a>
+            <a href="./css.html"">CSS</a>
+            <a href="./css.html"">JAVASCRIPT</a>
+            <a href="./css.html"">Express</a>
+          </div>
+        </div>
+
+        <div class="subnav">
+          <button class="subnavbtn">Frameworks <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="#link1">Angular</a>
+            <a href="#link2">Bootstrap</a>
+            <a href="#link3">ReactJS</a>
+            <a href="#link4">Tailwind</a>
+          </div>
+        </div>
+
+        <a href="../contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="sectionQuest">
+
+    <div class="questContainer">
+      <div class="quest">What is JavaScript?</div>
+      <div id="ans" class="ans" style="display: none;">JavaScript is a client-side and server-side scripting language inserted into HTML pages and is understood by web browsers. JavaScript is also an Object-based Programming language.</div>
+      <button id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">Enumerate the differences between Java and JavaScript?</div>
+      <div id="ansTwo" class="ans" style="display: none;">Java is a complete programming language. In contrast, JavaScript is a coded program that can be introduced to HTML pages. These two languages are not at all inter-dependent and are designed for different intent. Java is an object-oriented programming (OOPS) or structured programming languages like C++ or C, whereas JavaScript is a client-side scripting language.
+
+      </div>
+      <button onclick="myFunction()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What are JavaScript Data Types?</div>
+      <div id="ansThree" class="ans" style="display: none;">Following are the JavaScript Data types:
+
+        Number
+        String
+        Boolean
+        Object
+        Undefined
+        </div>
+      <button onclick="myQuest3()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest"> What is the use of isNaN function?</div>
+      <div id="ansFour" class="ans" style="display: none;">isNan function returns true if the argument is not a number; otherwise, it is false.
+        </div>
+      <button onclick="myQuest4()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">Which is faster between JavaScript and an ASP script?</div>
+      <div id="ansFive" class="ans" style="display: none;">JavaScript is faster. JavaScript is a client-side language,, and thus it does not need the assistance of the webserver to execute. On the other hand, ASP is a server-side language and hence is always slower than JavaScript. Javascript now is also a server-side language (nodejs).
+     </div>
+      <button onclick="myQuest5()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What is negative Infinity?
+      </div>
+      <div id="ansSix" class="ans" style="display: none;">Negative Infinity is a number in JavaScript which can be derived by dividing negative number by zero.</div>
+
+      <button onclick="myQuest6()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">Is it possible to break JavaScript Code into several lines?
+      </div>
+      <div id="ansSeven" class="ans" style="display: none;">Breaking within a string statement can be done by using a backslash, ‘\,’ at the end of the first line.</div>
+
+      <button onclick="myQuest7()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What is VH/VW (viewport height/ viewport width) in CSS?
+      </div>
+      <div id="ansEight" class="ans" style="display: none;">It’s a CSS unit used to measure the height and width in percentage with respect to the viewport. It is used mainly in responsive design techniques. The measure VH is equal to 1/100 of the height of the viewport. If the height of the browser is 1000px, 1vh is equal to 10px. Similarly, if the width is 1000px, then 1 vw is equal to 10px.
+        <br>document. Write ("This is \a program,");
+        <br><b>Example</b>var x=1, y=2,
+        z=
+        x+y;
+
+    </div>
+
+      <button onclick="myQuest8()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">Which company developed JavaScript?
+      </div>
+      <div id="ansNine" class="ans" style="display: none;">Netscape is the software company that developed JavaScript.
+        </div>
+
+      <button onclick="myQuest9()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What are global variables? How are these variable declared?
+      </div>
+      <div id="ansTen" class="ans" style="display: none;">Global variables are available throughout the length of the code so that it has no scope. The var keyword is used to declare a local variable or object. If the var keyword is omitted, a global variable is declared.
+
+        Example:
+        
+        // Declare a global: globalVariable = “Test”;
+        
+        The problems faced by using global variables are the clash of variable names of local and global scope. Also, it is difficult to debug and test the code that relies on global variables.
+      </div>
+
+      <button onclick="myQuest10()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What is a prompt box?
+
+      </div>
+      <div id="ansEleven" class="ans" style="display: none;">A prompt box is a box that allows the user to enter input by providing a text box. A label and box will be provided to enter the text or number.
+
+    </div>
+
+      <button onclick="myQuest11()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What is ‘this’ keyword in JavaScript?
+      </div>
+      <div id="ansTwelve" class="ans" style="display: none;">‘This’ keyword refers to the object from where it was called.</div>
+
+      <button onclick="myQuest12()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What is the working of timers in JavaScript?
+      </div>
+      <div id="ansThirteen" class="ans" style="display: none;">Timers are used to execute a piece of code at a set time or repeat the code in a given interval. This is done by using the functions setTimeout, setInterval, and clearInterval.
+
+        The setTimeout(function, delay) function is used to start a timer that calls a particular function after the mentioned delay. The setInterval(function, delay) function repeatedly executes the given function in the mentioned delay and only halts when canceled. The clearInterval(id) function instructs the timer to stop.
+        
+        Timers are operated within a single thread, and thus events might queue up, waiting to be executed.</div>
+
+      <button onclick="myQuest13()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">Which symbol is used for comments in Javascript?
+      </div>
+      <div id="ansFourteen" class="ans" style="display: none;">// for Single line comments and
+
+        /* Multi
+        
+        Line
+        
+        Comment
+        
+        */</div>
+
+      <button onclick="myQuest14()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What is the difference between ViewState and SessionState?
+      </div>
+      <div id="ansFifteen" class="ans" style="display: none;">‘ViewState’ is specific to a page in a session.
+        ‘SessionState’ is specific to user-specific data that can be accessed across all web application pages.
+
+    </div>
+
+      <button onclick="myQuest15()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What is === operator?
+      </div>
+      <div id="ansSixteen" class="ans" style="display: none;">=== is called a strict equality operator, which returns true when the two operands have the same value without conversion.</div>
+
+      <button onclick="myQuest16()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">How you can submit a form using JavaScript?
+      </div>
+      <div id="ansSeventeen" class="ans" style="display: none;">To submit a form using JavaScript use
+
+        document.form[0].submit();
+        document.form[0].submit();.</div>
+
+      <button onclick="myQuest17()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">Does JavaScript support automatic type conversion?
+      </div>
+      <div id="ansEighteen" class="ans" style="display: none;">Yes, JavaScript does support automatic type conversion. It is the common way of type conversion used by JavaScript developers.</div>
+
+      <button onclick="myQuest18()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">How can the style/class of an element be changed?
+      </div>
+      <div id="ansNineteen" class="ans" style="display: none;">It can be done in the following way:
+
+        document.getElementById("myText"). style. fontSize = "20";
+        or
+        
+        document. getElementById ("myText"). className = "anyclass";</div>
+
+      <button onclick="myQuest19()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">How to read and write a file using JavaScript?
+      </div>
+      <div id="ansTwenty" class="ans" style="display: none;">There are two ways to read and write a file using JavaScript
+
+        Using JavaScript extensions
+        Using a web page and Active X objects 
+        </div>
+
+      <button onclick="myQuest20()" id="showBtn">Show Answer</button>
+    </div>
+
+
+  </section>
+
+
+
+  <script src="../script.js"></script>
+
+</body>
+
+</html>

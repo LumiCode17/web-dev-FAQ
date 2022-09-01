@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developers Frequently Asked Questions</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="../style.css" />
+  <!--Tailwind css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--ionic.io-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  < nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Developers Frequently Asked Questions</h1>
+    <nav>
+      <div class="navbar">
+        <a href="../index.html">Home</a>
+
+        <a href="../about.html">About</a>
+
+        <div class="subnav">
+          <button class="subnavbtn">Language <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="./html.html">HTML</a>
+            <a href="./css.html"">CSS</a>
+            <a href="./js.html"">JAVASCRIPT</a>
+            <a href="./css.html"">Express</a>
+          </div>
+        </div>
+
+        <div class="subnav">
+          <button class="subnavbtn">Frameworks <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="#link1">Angular</a>
+            <a href="#link2">Bootstrap</a>
+            <a href="#link3">ReactJS</a>
+            <a href="#link4">Tailwind</a>
+          </div>
+        </div>
+
+        <a href="../contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="sectionQuest">
+
+    <div class="questContainer">
+      <div class="quest">What is CSS?</div>
+      <div id="ans" class="ans" style="display: none;">CSS stands for Cascading Style Sheet. It’s a style sheet language that determines how the elements/contents in the page are looked/shown. CSS is used to develop a consistent look and feel for all the pages.
+
+        CSS was developed and is maintained by the World Wide Web Consortium (W3C). It was first released on December 17, 1996. The CSS Working group currently working with different browser vendors to add/enforce the new feature/ specifications in all the browsers..</div>
+      <button id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What is the Box model in CSS? Which CSS properties are a part of it?</div>
+      <div id="ansTwo" class="ans" style="display: none;">A rectangle box is wrapped around every HTML element. The box model is used to determine the height and width of the rectangular box. The CSS Box consists of Width and height (or in the absence of that, default values and the content inside), padding, borders, margin.<br>
+        <b>Content</b>:  Actual Content of the box where the text or image is placed.
+        <b>Padding:</b> Area surrounding the content (Space between the border and content).
+        <b>Border:</b> Area surrounding the padding.
+        <b>Margin:</b> Area surrounding the border.
+
+      </div>
+      <button onclick="myFunction()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What are the advantages of using CSS?</div>
+      <div id="ansThree" class="ans" style="display: none;"><b>Separation of content from presentation</b> - CSS provides a way to present the same content in multiple presentation formats in mobile or desktop or laptop.<br>
+        <b>Easy to maintain</b> - CSS, built effectively can be used to change the look and feel complete by making small changes. To make a global change, simply change the style, and all elements in all the web pages will be updated automatically.<br>
+        <b>Bandwidth</b> - Used effectively, the style sheets will be stored in the browser cache and they can be used on multiple pages, without having to download again.
+        </div>
+      <button onclick="myQuest3()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What are the limitations of CSS?</div>
+      <div id="ansFour" class="ans" style="display: none;"><b>Browser Compatibility:</b> Some style selectors are supported and some are not. We have to determine which style is supported or not using the @support selector).<br>
+        <b>Cross Browser issue:</b> Some selectors behave differently in a different browser).
+        </div>
+      <button onclick="myQuest4()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">How to include CSS in the webpage?</div>
+      <div id="ansFive" class="ans" style="display: none;">1 - External Style Sheet: An external file linked to your HTML document: Using link tag, we can link the style sheet to the HTML page.<br>
+        2 - Embed CSS with a style tag: A set of CSS styles included within your HTML page.<br>
+
+        3 - Add inline styles to HTML elements(CSS rules applied directly within an HTML tag.): Style can be added directly to the HTML element using a style tag.<br>
+        4 - Import a stylesheet file (An external file imported into another CSS file): Another way to add CSS is by using the @import rule. This is to add a new CSS file within CSS itself.
+     </div>
+      <button onclick="myQuest5()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What are the different types of Selectors in CSS?
+      </div>
+      <div id="ansSix" class="ans" style="display: none;">A CSS selector is the part of a CSS ruleset that actually selects the content you want to style. Different types of selectors are listed below.
+
+        <b>Universal Selector:</b> The universal selector works like a wildcard character, selecting all elements on a page. In the given example, the provided styles will get applied to all the elements on the page.<br> <b>Element Type Selector:</b> This selector matches one or more HTML elements of the same name. In the given example, the provided styles will get applied to all the ul elements on the page. <br><b>ID Selector:</b> This selector matches any HTML element that has an ID attribute with the same value as that of the selector. In the given example, the provided styles will get applied to all the elements having ID as a container on the page.
+    <br><b>Class Selector:</b> The class selector also matches all elements on the page that have their class attribute set to the same value as the class.  In the given example, the provided styles will get applied to all the elements having ID as the box on the page. <br><b>Descendant Combinator:</b> The descendant selector or, more accurately, the descendant combinator lets you combine two or more selectors so you can be more specific in your selection method.<br><b>Child Combinator:</b> A selector that uses the child combinator is similar to a selector that uses a descendant combinator, except it only targets immediate child elements.<br><b>General Sibling Combinator:</b> A selector that uses a general sibling combinator to match elements based on sibling relationships. The selected elements are beside each other in the HTML.<br><b>Adjacent Sibling Combinator:</b> A selector that uses the adjacent sibling combinator uses the plus symbol (+), and is almost the same as the general sibling selector. The difference is that the targeted element must be an immediate sibling, not just a general sibling.<br><b>Attribute Selector:</b> The attribute selector targets elements based on the presence and/or value of HTML attributes, and is declared using square brackets.</div>
+
+      <button onclick="myQuest6()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What is a CSS Preprocessor? What are Sass, Less, and Stylus? Why do people use them?
+      </div>
+      <div id="ansSeven" class="ans" style="display: none;">A CSS Preprocessor is a tool used to extend the basic functionality of default vanilla CSS through its own scripting language. It helps us to use complex logical syntax like – variables, functions, mixins, code nesting, and inheritance to name a few, supercharging your vanilla CSS.
+        <br>SASS: Sass is the acronym for “Syntactically Awesome Style Sheets”. SASS can be written in two different syntaxes using SASS or SCSS<br><b>SASS vs SCSS</b>
+
+        
+        SASS is based on indentation and SCSS(Sassy CSS) is not.
+        SASS uses .sass extension while SCSS uses .scss extension.
+        SASS doesn’t use curly brackets or semicolons. SCSS uses it, just like the CSS.
+        <br>
+
+        LESS: LESS is an acronym for “Leaner Stylesheets”. LESS is easy to add to any javascript projects by using NPM or less.js file. It uses the extension .less.
+
+LESS syntax is the same as the SCSS with some exceptions. LESS uses @ to define the variables.<br>
+Stylus: Stylus offers a great deal of flexibility in writing syntax, supports native CSS as well as allows omission of brackets, colons, and semicolons. It doesn’t use @ or $ for defining variables.</div>
+
+      <button onclick="myQuest7()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What is VH/VW (viewport height/ viewport width) in CSS?
+      </div>
+      <div id="ansEight" class="ans" style="display: none;">It’s a CSS unit used to measure the height and width in percentage with respect to the viewport. It is used mainly in responsive design techniques. The measure VH is equal to 1/100 of the height of the viewport. If the height of the browser is 1000px, 1vh is equal to 10px. Similarly, if the width is 1000px, then 1 vw is equal to 10px.
+
+    </div>
+
+      <button onclick="myQuest8()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">Difference between reset vs normalize CSS?. How do they differ?
+      </div>
+      <div id="ansNine" class="ans" style="display: none;">Reset CSS: CSS resets aim to remove all built-in browser styling. For example margins, paddings, font-sizes of all elements are reset to be the same. 
+
+        Normalize CSS: Normalize CSS aims to make built-in browser styling consistent across browsers. It also corrects bugs for common browser dependencies.
+        
+        </div>
+
+      <button onclick="myQuest9()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What is the difference between inline, inline-block, and block?
+      </div>
+      <div id="ansTen" class="ans" style="display: none;">Block Element: The block elements always start on a new line. They will also take space for an entire row or width. List of block elements are -div, -p.
+
+        Inline Elements: Inline elements don't start on a new line, they appear on the same line as the content and tags beside them. Some examples of inline elements are -a, -span, -strong, and -img tags. 
+        
+        Inline Block Elements: Inline-block elements are similar to inline elements, except they can have padding and margins and set height and width values.
+      </div>
+
+      <button onclick="myQuest10()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">Is it important to test the webpage in different browsers?
+
+      </div>
+      <div id="ansEleven" class="ans" style="display: none;">It’s most important to test a website in different browsers when you’re first designing it, or when making major changes. However, it’s also important to repeat these tests periodically, since browsers go through a lot of updates and changes.
+
+    </div>
+
+      <button onclick="myQuest11()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What are Pseudo elements and Pseudo classes?
+      </div>
+      <div id="ansTwelve" class="ans" style="display: none;">Pseudo-elements allows us to create items that do not normally exist in the document tree, for example ::after.
+
+        ::before
+        ::after
+        ::first-letter
+        ::first-line
+        ::selection</div>
+
+      <button onclick="myQuest12()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">How do you specify units in the CSS?. What are the different ways to do it?
+      </div>
+      <div id="ansThirteen" class="ans" style="display: none;">There are different ways to specify units in CSS like px, em, pt, percentage (%). px(Pixel) gives fine-grained control and maintains alignment because 1 px or multiple of 1 px is guaranteed to look sharp. px is not cascade. em maintains relative size. you can have responsive fonts. Em, will cascade 1em is equal to the current font-size of the element or the browser default. If u sent font-size to 16px then 1em = 16px. The common practice is to set default body font-size to 62.5% (equal to 10px).
+
+        pt(point) are traditionally used in print. 1pt = 1/72 inch and it is a fixed-size unit.
+        
+        %(percentage) sets font-size relative to the font size of the body. Hence, you have to set the font-size of the body to a reasonable size.</div>
+
+      <button onclick="myQuest13()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What is a Style Sheet?
+      </div>
+      <div id="ansFourteen" class="ans" style="display: none;">A style sheet is used to build a consistent, transportable, and well-designed style template. You can add these templates on several different web pages. It describes the look and formatting of a document written in the markup language.</div>
+
+      <button onclick="myQuest14()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">Does margin-top or margin-bottom have an effect on inline elements?
+      </div>
+      <div id="ansFifteen" class="ans" style="display: none;">No, it doesn’t affect the inline elements. Inline elements flow with the contents of the page.
+
+    </div>
+
+      <button onclick="myQuest15()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What property is used for changing the font face?
+      </div>
+      <div id="ansSixteen" class="ans" style="display: none;">We can use the font-family property for achieving this. The font-family property is used for specifying what font needs to be applied on the targetted DOM element. It can hold several font names as part of “fallback” mechanism in case the browser does not support the fonts.</div>
+
+      <button onclick="myQuest16()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">What are the differences between adaptive design and responsive design?
+      </div>
+      <div id="ansSeventeen" class="ans" style="display: none;"><b>Adaptive Design</b>
+        Adaptive design focuses on developing websites based on multiple fixed layout sizes.<br>When a website developed using adaptive design is opened on the desktop browser, first the available space is detected and then the layout with most appropriate sizes are picked and used for the display of contents. Resizing of browser window has no affect on the design.<br>Usually, adaptive designs use six standard screen widths - 320 px, 480 px, 760 px, 960 px, 1200 px, 1600 px. These sizes are detected and appropriate layouts are loaded.<br>It takes a lot of time and effort to first examine the options and realities of the end users and then design best possible adaptive solutions them.<br>Gives a lot of control over the design to develop sites for specific screens.<br><br><b>Responsive Design</b> Responsive design focuses on showing content on the basis of available browser space.<br>When a website developed using responsive design is opened on a desktop browser and when we try to resize the browser window, the content of the website is dynamically and optimally rearranged to accomodate the window.<br>This design makes use of CSS media queries for changing styles depending on the target devices properties for adapting to different screens.<br>Generally, Responsive design takes much less work to build and design fluid websites that can accomodate content from screen depending on the screen size.</div>
+
+      <button onclick="myQuest17()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">How are the CSS selectors matched against the elements by the browser?
+      </div>
+      <div id="ansEighteen" class="ans" style="display: none;">The order of matching selectors goes from right to left of the selector expression. The elements in the DOM are filtered by browsers based on the key selectors and are then traversed up to the parent elements for determining the matches. The speed of determining the elements depends on the length of the chain of selectors. </div>
+
+      <button onclick="myQuest18()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">How is border-box different from content-box?
+      </div>
+      <div id="ansNineteen" class="ans" style="display: none;">content-box is the default value box-sizing property. The height and the width properties consist only of the content by excluding the border and padding.</div>
+
+      <button onclick="myQuest19()" id="showBtn">Show Answer</button>
+    </div>
+
+    <div class="questContainer">
+      <div class="quest">How is opacity specified in CSS3?
+      </div>
+      <div id="ansTwenty" class="ans" style="display: none;">Opacity refers to the degree to which the content is transparent or opaque. We can use the property named opacity which takes the values ranging from 0 to 1. 0 specifies that the element is completely transparent where 1 means that the element is completely opaque. 
+        </div>
+
+      <button onclick="myQuest20()" id="showBtn">Show Answer</button>
+    </div>
+
+
+  </section>
+
+
+
+  <script src="../script.js"></script>
+
+</body>
+
+</html>
