@@ -115,6 +115,7 @@ nav {
     justify-content: center;
     /* align-items: center; */
     margin-top: 20px;
+    /* height: 100vh; */
 }
 
 .div1 {
@@ -326,7 +327,9 @@ input[type=submit]:hover {
 footer {
     position: fixed;
     bottom: 0;
+    color: white;
     background-color: #000;
     width: 100%;
     height: 30px;
+    text-align: center;
 }
