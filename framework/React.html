@@ -54,96 +54,105 @@
   <section class="sectionQuest">
 
     <div class="questContainer">
-      <div class="quest">What is HTML?</div>
-      <div id="ans" class="ans" style="display: none;">HTML stands for Hyper Text Markup Language. It is a language of
-        the World Wide Web. It is a standard text formatting language which is used to create and display pages on the
-        Web. HTML makes the text more interactive and dynamic. It can turn text into images, tables, links. HTML pages
-        are saved by adding .html or .html in web page name.</div>
+      <div class="quest">What is React?</div>
+      <div id="ans" class="ans" style="display: none;">React is a front-end JavaScript library developed by Facebook in
+        2011.<br>
+        It follows the component based approach which helps in building reusable UI components.<br>
+        It is used for developing complex and interactive web and mobile UI.<br>
+        Even though it was open-sourced only in 2015, it has one of the largest communities supporting it.</div>
       <button id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
-      <div class="quest">What is the difference between HTML elements and tags?</div>
-      <div id="ansTwo" class="ans" style="display: none;">The <b>Elements</b> is an individual component of the HTML web
-        page or document. It represents semantics or meaning. For example, the title element represents the title of the
-        document.
-        <br><b>Tags</b> is the root of the HTML document which is used to specify that the document is HTML. For
-        example, the Head tag is used to contain all the head element in the HTML file
+      <div class="quest">Differentiate between Real DOM and Virtual DOM?</div>
+      <div id="ansTwo" class="ans" style="display: none;">
+        <b>Real Dom</b><br>
+        1. It updates slow. <br>
+        2. Can directly update HTML.
+        3. Creates a new DOM if element updates.
+        4. DOM manipulation is very expensive.
+        5. Too much of memory wastage.
+        <b>Virtual Dom</b><br>
+        1. It updates faster.<br>
+        2. Can’t directly update HTML.<br>
+        3. Updates the JSX if element updates. <br>
+        4. DOM manipulation is very easy.<br>
+        5. No memory wastage.
       </div>
       <button onclick="myFunction()" id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
-      <div class="quest">What are Attributes and how do you use them?</div>
-      <div id="ansThree" class="ans" style="display: none;">Each tag has additional attributes that change the way the
-        tag behaves or is displayed. For example, a <b>Input</b> tag has a type attribute, which you can use to specify
-        whether it’s a text field, checkbox, radio button or one of many more options.
-        Attributes are specified directly after the name of the tag, inside the two angled brackets. They should only
-        ever appear in opening tags or in self-closing tags. But, they can never be in closing tags.<br>Example...<br>
-        input type="text"
-        input type="checkbox"
-        input type="radio" value="on"</div>
+      <div class="quest">What are the features of React? </div>
+      <div id="ansThree" class="ans" style="display: none;">Major features of React are listed below:
+        1. It uses the virtual DOM instead of the real DOM.<br>
+        2. It uses server-side rendering.<br>
+        3. It follows uni-directional data flow or data binding.</div>
       <button onclick="myQuest3()" id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
-      <div class="quest">What is the difference between a block-level element and an inline element?</div>
-      <div id="ansFour" class="ans" style="display: none;">A block-level element is drawn as a block that stretches to
-        fill the full width available to it i.e, the width of its container and will always start on a new line.
-        Elements that are block-level by default: <b>img</b>, <b>section</b>, <b>form</b>, <b>nav</b> <br>
-        Inline elements are drawn where they are defined and only take up space that is absolutely needed. The easiest
-        way to understand how they work is to look at how text flows on a page.
-        Examples of elements that are inline by default: <b>span</b>, <b>strong</b>, <b>a</b>, <b>input</b>, </div>
+      <div class="quest"> List some of the major advantages of React.</div>
+      <div id="ansFour" class="ans" style="display: none;">Some of the major advantages of React are:
+
+        1. It increases the application’s performance<br>
+        2. It can be conveniently used on the client as well as server side<br>
+        3. Because of JSX, code’s readability increases<br>
+        4. React is easy to integrate with other frameworks like Meteor, Angular, etc<br>
+        5. Using React, writing UI test cases become extremely easy </div>
       <button onclick="myQuest4()" id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
-      <div class="quest">How to comment in HTML?</div>
-      <div id="ansFive" class="ans" style="display: none;">The start of the comment is denoted by 
-        <b><</b><b>!-- commented --</b><b>></b>. Anything in the middle will be completely ignored, even if it
-            contains valid HTML. </div>
+      <div class="quest"> What are the limitations of React?</div>
+      <div id="ansFive" class="ans" style="display: none;">Limitations of React are listed below:
+
+        1. React is just a library, not a full-blown framework<br>
+        2. Its library is very large and takes time to understand<br>
+        3. It can be little difficult for the novice programmers to understand<br>
+        4. Coding gets complex as it uses inline templating and JSX
+      </div>
       <button onclick="myQuest5()" id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
-      <div class="quest">What are the HTML tags used to display the data in the tabular form?
+      <div class="quest">What is JSX?
       </div>
-      <div id="ansSix" class="ans" style="display: none;">The list of HTML tags used to display data in the tabular form
-        include:<br> <b>table, </b><b>tr, </b><b>th, </b><b>td, </b><b>caption, </b><b>colgroup, </b><b>col,
-        </b><b>body, </b><b>thead, </b><b>tfooter </b> </div>
+      <div id="ansSix" class="ans" style="display: none;">JSX is a shorthand for JavaScript XML. This is a type of file
+        used by React which utilizes the expressiveness of JavaScript along with HTML like template syntax. This makes
+        the HTML file really easy to understand.</div>
 
       <button onclick="myQuest6()" id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
-      <div class="quest">How to create a Hyperlink in HTML?
+      <div class="quest"> What do you understand by Virtual DOM? Explain its works.
       </div>
-      <div id="ansSeven" class="ans" style="display: none;">The HTML provides an anchor tag to create a hyperlink that links one page to another page. These tags can appear in any of the following ways:
-
-        Unvisited link – It is displayed, underlined and blue.
-        Visited link – It is displayed, underlined and purple.
-        Active link – It is displayed, underlined and red.
-        form include:<br> <b><</b><b>a href="......."</b><b>></b> </div>
+      <div id="ansSeven" class="ans" style="display: none;">A virtual DOM is a lightweight JavaScript object which
+        originally is just a copy of the real DOM. It is a node tree that lists the elements, their attributes and
+        content as Objects and their properties. React’s render function creates a node tree out of the React
+        components. It then updates this tree in response to the mutations in the data model which is caused by various
+        actions done by the user or by the system. Check out this Web developer course online to learn more about react.
+      </div>
 
       <button onclick="myQuest7()" id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
-      <div class="quest">What are the HTML tags used to display the data in the tabular form?
+      <div class="quest"> Why can’t browsers read JSX?
       </div>
-      <div id="ansEight" class="ans" style="display: none;">The list of HTML tags used to display data in the tabular
-        form include:<br> <b>table, </b><b>tr, </b><b>th, </b><b>td, </b><b>caption, </b><b>colgroup, </b><b>col,
-        </b><b>body, </b><b>thead, </b><b>tfooter </b> </div>
+      <div id="ansEight" class="ans" style="display: none;">Browsers can only read JavaScript objects but JSX in not a
+        regular JavaScript object. Thus to enable a browser to read JSX, first, we need to transform JSX file into a
+        JavaScript object using JSX transformers like Babel and then pass it to the browser.</div>
 
       <button onclick="myQuest8()" id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
-      <div class="quest">Name some common lists that are used when designing a page.
+      <div class="quest">How different is React’s ES6 syntax when compared to ES5?
       </div>
-      <div id="ansNine" class="ans" style="display: none;">Ordered list – The ordered list displays elements in a numbered format. It is represented by <b>ol</b> tag.
-        Unordered list – The unordered list displays elements in a bulleted format. It is represented by <b>ul</b> tag.
-        Definition list – The definition list displays elements in definition form like in a dictionary. The <b>dl </b><b>dt </b> and <b>dd</b> tags are used to define description list.</div>
+      <div id="ansNine" class="ans" style="display: none;">Syntax has changed from ES5 to ES6 in the following aspects:
+      </div>
 
       <button onclick="myQuest9()" id="showBtn">Show Answer</button>
     </div>
@@ -151,100 +160,142 @@
     <div class="questContainer">
       <div class="quest">What is semantic HTML?
       </div>
-      <div id="ansTen" class="ans" style="display: none;">Semantic HTML is a coding style. It is the use of <b>HTML markup</b> to reinforce the semantics or meaning of the content. For example: In semantic HTML <b>b</b> tag is not used for bold statement as well as <b>i</b> tag is used for italic. Instead of these we use <b>strong</b> and <b>em</b> tags.
+      <div id="ansTen" class="ans" style="display: none;">Semantic HTML is a coding style. It is the use of <b>HTML
+          markup</b> to reinforce the semantics or meaning of the content. For example: In semantic HTML <b>b</b> tag is
+        not used for bold statement as well as <b>i</b> tag is used for italic. Instead of these we use <b>strong</b>
+        and <b>em</b> tags.
       </div>
 
       <button onclick="myQuest10()" id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
-      <div class="quest">How to create a nested webpage in HTML?
+      <div class="quest">In React, everything is a component.” Explain.
 
       </div>
-      <div id="ansEleven" class="ans" style="display: none;">The HTML iframe tag is used to display a nested webpage. In other words, it represents a webpage within a webpage. The HTML <b>iframe</b> tag defines an inline frame.</div>
+      <div id="ansEleven" class="ans" style="display: none;">Components are the building blocks of a React application’s
+        UI. These components split up the entire UI into small independent and reusable pieces. Then it renders each of
+        these components independent of each other without affecting the rest of the UI.</div>
 
       <button onclick="myQuest11()" id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
-      <div class="quest">What is an image map?
+      <div class="quest">What is the purpose of render() in React.
       </div>
-      <div id="ansTwelve" class="ans" style="display: none;">An image map is used for linking many different web pages using a single image. It is represented by <b><</b><b>map</b><b>></b> tag. You can define shapes in images that you want to include as part of an image mapping. </div>
+      <div id="ansTwelve" class="ans" style="display: none;">Each React component must have a render() mandatorily. It
+        returns a single React element which is the representation of the native DOM component. If more than one HTML
+        element needs to be rendered, then they must be grouped together inside one enclosing tag such as ..form..,
+        ..group.., ..div.. etc. This function must be kept pure i.e., it must return the same result each time it is
+        invoked.</div>
 
       <button onclick="myQuest12()" id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
-      <div class="quest">Does a hyperlink only apply to text?
+      <div class="quest">What is Props?
       </div>
-      <div id="ansThirteen" class="ans" style="display: none;">No, hyperlinks can be used both on texts and images. The HTML anchor tag defines a hyperlink that links one page to another page. The “href” attribute is the most important attribute of the HTML anchor tag.</div>
+      <div id="ansThirteen" class="ans" style="display: none;">Props is the shorthand for Properties in React. They are
+        read-only components which must be kept pure i.e. immutable. They are always passed down from the parent to the
+        child components throughout the application. A child component can never send a prop back to the parent
+        component. This help in maintaining the unidirectional data flow and are generally used to render the
+        dynamically generated data.</div>
 
       <button onclick="myQuest13()" id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
-      <div class="quest">What is a Style Sheet?
+      <div class="quest">What is a state in React and how is it used?
       </div>
-      <div id="ansFourteen" class="ans" style="display: none;">A style sheet is used to build a consistent, transportable, and well-designed style template. You can add these templates on several different web pages. It describes the look and formatting of a document written in the markup language.</div>
+      <div id="ansFourteen" class="ans" style="display: none;">States are the heart of React components. States are the
+        source of data and must be kept as simple as possible. Basically, states are the objects which determine
+        components rendering and behavior. They are mutable unlike the props and create dynamic and interactive
+        components. They are accessed via this.state().</div>
 
       <button onclick="myQuest14()" id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
-      <div class="quest">Explain the layout of HTML.
+      <div class="quest"> What is arrow function in React? How is it used?
       </div>
-      <div id="ansFifteen" class="ans" style="display: none;">HTML layout specifies a way in which the web page is arranged. Every website has a specific layout to display content in a specific manner. Following are different HTML elements which are used to define the different parts of a webpage: </div>
+      <div id="ansFifteen" class="ans" style="display: none;">Arrow functions are more of brief syntax for writing the
+        function expression. They are also called ‘fat arrow‘ (=>) the functions. These functions allow to bind the
+        context of the components properly since in ES6 auto binding is not available by default. Arrow functions are
+        mostly useful while working with the higher order functions.</div>
 
       <button onclick="myQuest15()" id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
-      <div class="quest">What is a marquee?
+      <div class="quest"> What are the different phases of React component’s lifecycle?
       </div>
-      <div id="ansSixteen" class="ans" style="display: none;">Marquee is used for the scrolling text on a web page. It scrolls the image or text up, down, left or right automatically. You should put the text which you want to scroll within the <b>marquee</b> tag.</div>
+      <div id="ansSixteen" class="ans" style="display: none;">There are three different phases of React component’s
+        lifecycle:
+
+        ..Initial Rendering Phase: This is the phase when the component is about to start its life journey and make its
+        way to the DOM.<br>
+        ..Updating Phase: Once the component gets added to the DOM, it can potentially update and re-render only when a
+        prop or state change occurs. That happens only in this phase.<br>
+        ..Unmounting Phase: This is the final phase of a component’s life cycle in which the component is destroyed and
+        removed from the DOM.</div>
 
       <button onclick="myQuest16()" id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
-      <div class="quest">What are the tags used to separate a section of texts?
+      <div class="quest"> Explain the lifecycle methods of React components in detail.
       </div>
-      <div id="ansSeventeen" class="ans" style="display: none;">There are three tags that can be used to separate the texts:
+      <div id="ansSeventeen" class="ans" style="display: none;">Some of the most important lifecycle methods are:
 
-        <b>br</b> tag – Usually tag is used to separate the line of text. It breaks the current line and conveys the flow to the next line
-        <b>p</b> tag – This contains the text in the form of a new paragraph.
-        <b>blockquote</b> tag – It is used to define a large quoted section. If you have a large quotation, then put the entire text within <b>blockquote</b> tag.</div>
+        1. componentWillMount() – Executed just before rendering takes place both on the client as well as
+        server-side.<br>
+        2. componentDidMount() – Executed on the client side only after the first render.<br>
+        3. componentWillReceiveProps() – Invoked as soon as the props are received from the parent class and before
+        another render is called.<br>
+        4. shouldComponentUpdate() – Returns true or false value based on certain conditions. If you want your component
+        to update, return true else return false. By default, it returns false.<br>
+        5. componentWillUpdate() – Called just before rendering takes place in the DOM.<br>
+        6. componentDidUpdate() – Called immediately after rendering takes place.<br>
+        7. componentWillUnmount() – Called after the component is unmounted from the DOM. It is used to clear up the
+        memory spaces.</div>
 
       <button onclick="myQuest17()" id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
-      <div class="quest">What is the difference between DIV and SPAN in HTML?
+      <div class="quest">What is an event in React?
       </div>
-      <div id="ansEighteen" class="ans" style="display: none;">The difference between span and div is that a span element is in-line and usually used for a small chunk of HTML inside a line,such as inside a paragraph. Whereas, a div or division element is block-line which is equivalent to having a line-break before and after it and used to group larger chunks of code. </div>
+      <div id="ansEighteen" class="ans" style="display: none;">In React, events are the triggered reactions to specific
+        actions like mouse hover, mouse click, key press, etc. Handling these events are similar to handling events in
+        DOM elements. But there are some syntactical differences like:<br>
+
+        1. Events are named using camel case instead of just using the lowercase.<br>
+        2. Events are passed as functions instead of strings.<br>
+        3. The event argument contains a set of properties, which are specific to an event. Each event type contains its
+        own properties and behavior which can be accessed via its event handler only.</div>
 
       <button onclick="myQuest18()" id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
-      <div class="quest">What is the purpose of using alternative texts in images?
+      <div class="quest">What are synthetic events in React?
       </div>
-      <div id="ansNineteen" class="ans" style="display: none;">The purpose of using alternative texts is to define what the image is about. During an image mapping, it can be confusing and difficult to understand what hotspots correspond to a particular link. These alternative texts come in action here and put a description at each link which makes it easy for users to understand the hotspot links easily.</div>
+      <div id="ansNineteen" class="ans" style="display: none;">Synthetic events are the objects which act as a
+        cross-browser wrapper around the browser’s native event. They combine the behavior of different browsers into
+        one API. This is done to make sure that the events show consistent properties across different browsers.</div>
 
       <button onclick="myQuest19()" id="showBtn">Show Answer</button>
     </div>
 
     <div class="questContainer">
-      <div class="quest">How to create a new HTML element?
+      <div class="quest"> What do you understand by refs in React?
       </div>
-      <div id="ansTwenty" class="ans" style="display: none;">You can create new elements for the document in the following way:
-        <b>< <b>script</b>>
-        <b>document.createElement﴾"myElement"﴿</b>
-        <b> <</b><b>/script</b><b> > </b>
-        </b>
-        It can be also be used in the HTML as:
-        <b>myElement</b>
-        </div>
+      <div id="ansTwenty" class="ans" style="display: none;">Refs is the short hand for References in React. It is an
+        attribute which helps to store a reference to a particular React element or component, which will be returned by
+        the components render configuration function. It is used to return references to a particular element or
+        component returned by render(). They come in handy when we need DOM measurements or to add methods to the
+        components.
+      </div>
 
       <button onclick="myQuest20()" id="showBtn">Show Answer</button>
     </div>
